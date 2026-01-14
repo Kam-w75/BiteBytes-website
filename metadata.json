@@ -1,0 +1,5 @@
+{
+  "name": "BiteBytes - Professional Recipe Costing",
+  "description": "Landing page for BiteBytes, the iOS native app for chefs and kitchen management featuring AI ingredient recognition and real-time costing.",
+  "requestFramePermissions": []
+}
