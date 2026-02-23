@@ -1,8 +1,22 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './UI/Button';
 import { AppStoreBadge } from './UI/AppStoreBadge';
-import { ChevronRight, ScanLine, TrendingUp, Utensils } from 'lucide-react';
+import { 
+  ChevronRight, 
+  Percent, 
+  Store, 
+  DollarSign, 
+  AlertTriangle, 
+  Mic, 
+  LayoutDashboard, 
+  UtensilsCrossed, 
+  Camera, 
+  Box, 
+  MoreHorizontal,
+  Sparkles
+} from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -77,60 +91,132 @@ export const Hero: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-primary/20 rounded-full blur-3xl -z-10" />
             
             {/* Phone Frame Simulation */}
-            <div className="relative w-[320px] h-[650px] bg-slate-900 rounded-[3rem] p-4 shadow-2xl border-4 border-slate-800 mx-auto transform rotate-[-6deg] hover:rotate-0 transition-transform duration-500">
+            <div className="relative w-[340px] h-[680px] bg-slate-900 rounded-[3.5rem] p-3 shadow-2xl border-4 border-slate-800 mx-auto transform rotate-[-6deg] hover:rotate-0 transition-transform duration-500">
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-slate-900 rounded-b-2xl z-20"></div>
               
               {/* Screen Content */}
-              <div className="w-full h-full bg-slate-50 rounded-[2.5rem] overflow-hidden flex flex-col relative">
+              <div className="w-full h-full bg-white rounded-[2.8rem] overflow-hidden flex flex-col relative font-sans">
                 
-                {/* App Header */}
-                <div className="pt-12 px-6 pb-4 bg-white">
-                  <h3 className="text-xl font-bold text-slate-900">Dashboard</h3>
-                  <p className="text-sm text-slate-500">Welcome back, Chef!</p>
-                </div>
-
-                {/* App Body */}
-                <div className="flex-1 p-6 space-y-4 overflow-hidden">
-                  {/* Chart Card */}
-                  <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-xs font-bold text-slate-400 uppercase">Food Cost %</span>
-                      <span className="text-xs font-bold text-green-500 bg-green-50 px-2 py-1 rounded-full">-2.4%</span>
-                    </div>
-                    <div className="text-2xl font-bold text-slate-900 mb-1">28.5%</div>
-                    <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                      <div className="h-full w-[28.5%] bg-brand-primary rounded-full"></div>
-                    </div>
+                {/* Status/Header Area */}
+                <div className="pt-10 px-6 pb-2">
+                  <div className="flex justify-between items-center mb-6">
+                    <h2 className="text-3xl font-extrabold text-slate-900">Dashboard</h2>
                   </div>
 
-                  {/* Grid Actions */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-brand-primary text-white p-4 rounded-2xl shadow-lg shadow-brand-primary/20 flex flex-col items-center justify-center gap-2 aspect-square">
-                      <ScanLine size={32} />
-                      <span className="font-bold text-sm">Scan Item</span>
+                  {/* Demo Mode Banner */}
+                  <div className="bg-[#2C3E50] rounded-xl p-3 flex items-center justify-between shadow-sm">
+                    <div className="flex items-center gap-2">
+                      <Sparkles className="text-white w-4 h-4" />
+                      <div className="text-left">
+                        <div className="text-white text-xs font-bold leading-none">Demo Mode</div>
+                        <div className="text-slate-300 text-[10px]">Exploring Hometown Kitchen Co.</div>
+                      </div>
                     </div>
-                    <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center gap-2 aspect-square">
-                      <Utensils size={32} className="text-slate-400" />
-                      <span className="font-medium text-sm text-slate-600">Recipes</span>
-                    </div>
-                  </div>
-
-                  {/* List Item */}
-                  <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-3">
-                     <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-500">
-                        <TrendingUp size={18} />
-                     </div>
-                     <div>
-                       <div className="text-sm font-bold text-slate-900">Beef Tenderloin</div>
-                       <div className="text-xs text-slate-500">Price up 12% vs last week</div>
-                     </div>
+                    <button className="bg-slate-700 text-white text-[10px] font-bold py-1 px-3 rounded-md">Exit Demo</button>
                   </div>
                 </div>
 
-                {/* Floating Action Button */}
-                <div className="absolute bottom-6 right-6 w-14 h-14 bg-brand-primary rounded-full shadow-xl flex items-center justify-center text-white">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                {/* Content Area - REMOVED overflow-y-auto to fix the UI in place */}
+                <div className="flex-1 px-5 pt-4 space-y-4 overflow-hidden pb-24">
+                  
+                  {/* Title Section */}
+                  <div className="text-center mb-2">
+                    <h3 className="text-xl font-bold text-slate-900">Hometown Kitchen Co.</h3>
+                    <p className="text-slate-500 text-xs">5 Concepts. 2 Kitchens. 1 Dashboard.</p>
+                  </div>
+
+                  {/* Stats Grid */}
+                  <div className="grid grid-cols-2 gap-3">
+                    {/* Food Cost */}
+                    <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex flex-col">
+                      <Percent className="text-orange-500 w-5 h-5 mb-2" strokeWidth={2.5} />
+                      <div className="text-2xl font-bold text-slate-900">27.8%</div>
+                      <div className="text-[10px] font-bold text-slate-500 uppercase mt-auto">Food Cost</div>
+                      <div className="text-[9px] text-slate-400">Target: 25%</div>
+                    </div>
+                    {/* Brands */}
+                    <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex flex-col">
+                      <Store className="text-blue-500 w-5 h-5 mb-2" strokeWidth={2.5} />
+                      <div className="text-2xl font-bold text-slate-900">5</div>
+                      <div className="text-[10px] font-bold text-slate-500 uppercase mt-auto">Brands</div>
+                      <div className="text-[9px] text-slate-400">12 recipes</div>
+                    </div>
+                    {/* Weekly Revenue */}
+                    <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex flex-col">
+                      <DollarSign className="text-green-500 w-5 h-5 mb-2" strokeWidth={2.5} />
+                      <div className="text-2xl font-bold text-slate-900">$58K</div>
+                      <div className="text-[10px] font-bold text-slate-500 uppercase mt-auto">Weekly Revenue</div>
+                      <div className="text-[9px] text-slate-400">8847 orders/mo</div>
+                    </div>
+                    {/* Alerts */}
+                    <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex flex-col">
+                      <AlertTriangle className="text-red-500 w-5 h-5 mb-2" strokeWidth={2.5} />
+                      <div className="text-2xl font-bold text-slate-900">3</div>
+                      <div className="text-[10px] font-bold text-slate-500 uppercase mt-auto">Alerts</div>
+                      <div className="text-[9px] text-slate-400">Need attention</div>
+                    </div>
+                  </div>
+
+                  {/* Ask Me Anything Voice Assistant */}
+                  <div className="bg-white rounded-2xl border border-slate-100 shadow-md p-4 flex items-center gap-4 hover:shadow-lg transition-shadow">
+                    <div className="w-14 h-14 bg-slate-800 rounded-full flex items-center justify-center text-white shrink-0">
+                      <div className="flex items-center gap-[2px]">
+                        {[1, 2, 3, 4, 3, 2, 1].map((h, i) => (
+                          <div key={i} className="bg-white w-[2px] rounded-full" style={{ height: `${h * 4}px` }} />
+                        ))}
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <div className="font-bold text-slate-900">Ask Me Anything</div>
+                      <div className="text-xs text-slate-500">Voice Assistant</div>
+                    </div>
+                    <ChevronRight className="text-slate-300 w-5 h-5" />
+                  </div>
+
+                  {/* Alerts Section */}
+                  <div className="space-y-3">
+                    <h4 className="text-xl font-bold text-slate-900 px-1">Alerts</h4>
+                    <div className="bg-white rounded-2xl border border-slate-100 p-4 flex items-start gap-4 shadow-sm">
+                      <div className="p-2 bg-orange-50 rounded-lg shrink-0">
+                        <AlertTriangle className="text-orange-500 w-5 h-5" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="font-bold text-slate-900">Inventory Status</div>
+                        <div className="text-[10px] text-slate-500">0 expiring, 25 low, 0 out</div>
+                      </div>
+                      <ChevronRight className="text-slate-300 w-4 h-4 mt-1" />
+                    </div>
+                  </div>
                 </div>
+
+                {/* Floating Bottom Navigation Bar */}
+                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-[90%] bg-white/90 backdrop-blur-lg rounded-[2.5rem] shadow-2xl border border-slate-100 px-4 py-2 z-30">
+                  <div className="flex items-center justify-between px-2">
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="bg-slate-100 p-2 rounded-2xl text-brand-primary">
+                        <LayoutDashboard size={20} strokeWidth={2.5} />
+                      </div>
+                      <span className="text-[9px] font-bold text-slate-900">Dashboard</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-1 opacity-40">
+                      <UtensilsCrossed size={20} />
+                      <span className="text-[9px] font-bold">Recipes</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-1 opacity-40">
+                      <Camera size={20} />
+                      <span className="text-[9px] font-bold">Scan</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-1 opacity-40">
+                      <Box size={20} />
+                      <span className="text-[9px] font-bold">Inventory</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-1 opacity-40">
+                      <MoreHorizontal size={20} />
+                      <span className="text-[9px] font-bold">More</span>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </motion.div>

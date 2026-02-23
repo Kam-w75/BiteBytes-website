@@ -16,9 +16,9 @@
             },
             colors: {
               brand: {
-                primary: '#F25F4C', // Logo Red-Orange
-                dark: '#0F172A',    // Logo Border (Dark Slate)
-                light: '#FCA599',   // Light accent
+                primary: '#508D86', // Logo Teal/Sea-green
+                dark: '#343D52',    // Logo Dark Navy Ring
+                light: '#A8C4C0',   // Light teal accent
               },
               surface: {
                 50: '#F8FAFC',
@@ -38,6 +38,13 @@
         background: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
     </style>
   <script type="importmap">
