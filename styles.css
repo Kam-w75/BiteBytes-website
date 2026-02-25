@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Tailwind v4: theme values are defined in CSS */
+@theme {
+  --font-family-sans: 'Inter', sans-serif;
+  --color-brand-primary: #508D86;
+  --color-brand-dark: #343D52;
+  --color-brand-light: #A8C4C0;
+  --color-surface-50: #F8FAFC;
+  --color-surface-100: #F1F5F9;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-family-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
