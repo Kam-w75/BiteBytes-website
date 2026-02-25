@@ -75,8 +75,8 @@ export const PrivacyPolicy: React.FC = () => {
                       <p className="text-sm">User ID — your account ID used to authenticate you and isolate your data in our database. <span className="text-brand-primary font-medium">(App Functionality)</span></p>
                     </div>
                     <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                      <p className="font-semibold text-slate-800 mb-1">Purchases</p>
-                      <p className="text-sm">Purchase History — your subscription tier (Free, Pro, or Business) and subscription status, verified through Apple StoreKit 2. <span className="text-brand-primary font-medium">(App Functionality)</span></p>
+                      <p className="font-semibold text-slate-800 mb-1">Account Status</p>
+                      <p className="text-sm">Your account status, verified through Apple StoreKit 2. <span className="text-brand-primary font-medium">(App Functionality)</span></p>
                     </div>
                   </div>
                 </div>
@@ -124,8 +124,7 @@ export const PrivacyPolicy: React.FC = () => {
                   { title: 'Apple Sign-In Identifier', body: 'If you choose Sign in with Apple, we receive an anonymized identifier from Apple rather than your email. This is linked to your account.' },
                   { title: 'User Content (Recipes, Ingredients, Inventory, Vendors)', body: 'The core data you create in the app. Stored locally on your device and synced to your private cloud database. Used solely to provide app functionality.' },
                   { title: 'Photos (AI Camera Feature Only)', body: "Captured or selected by you when using the AI Camera. Compressed on your device, transmitted to OpenAI's Vision API for ingredient recognition, and then discarded. Not stored on BiteBytes's servers." },
-                  { title: 'Financial Data (Costs and Pricing)', body: 'Ingredient costs, vendor prices, and sell prices you enter manually. Used only to power the recipe costing engine on your device and in your account. Never shared with any third party.' },
-                  { title: 'Subscription Status', body: 'Your active plan tier (Free/Pro/Business) and renewal date, verified via Apple StoreKit 2. Used to unlock features appropriate to your tier.' },
+                  { title: 'Financial Data (Costs)', body: 'Ingredient costs, vendor prices, and sell prices you enter manually. Used only to power the recipe costing engine on your device and in your account. Never shared with any third party.' },
                   { title: 'Anonymized Usage & Crash Data', body: 'Aggregated, non-identifiable data about how the app is used and when it crashes. Used to improve app stability and features. Cannot be traced back to any individual user.' },
                   { title: 'Sync Timestamps', body: 'The date and time of your last data sync, stored to enable conflict resolution when you use multiple devices. Not shared.' },
                 ].map((item) => (
@@ -145,7 +144,7 @@ export const PrivacyPolicy: React.FC = () => {
                 <li>Create and secure your account</li>
                 <li>Deliver the full functionality of the app (recipe costing, inventory, vendor management, AI recognition)</li>
                 <li>Sync your data across your devices</li>
-                <li>Verify your subscription status and unlock Pro/Business features</li>
+
                 <li>Fix bugs and improve app performance using anonymized diagnostics</li>
                 <li>Respond to support requests you initiate</li>
                 <li>Comply with applicable laws</li>
@@ -195,9 +194,9 @@ export const PrivacyPolicy: React.FC = () => {
                   {
                     name: 'Apple StoreKit 2',
                     url: 'apple.com',
-                    role: 'Subscription and in-app purchase management.',
-                    data: 'Subscription status, purchase verification tokens.',
-                    purpose: 'App Functionality — verifying your subscription tier.',
+                    role: 'Account verification.',
+                    data: 'Account status, verification tokens.',
+                    purpose: 'App Functionality — verifying your account.',
                     linked: true,
                     privacy: 'apple.com/legal/privacy',
                     note: 'BiteBytes never receives or stores your payment card information. All payment processing is handled entirely by Apple.',
@@ -240,30 +239,6 @@ export const PrivacyPolicy: React.FC = () => {
               </p>
             </section>
 
-            {/* Section 7 */}
-            <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">7. Subscriptions & Payments</h2>
-              <p className="mb-6">BiteBytes offers three tiers:</p>
-              <div className="space-y-4">
-                {[
-                  { tier: 'Free', desc: 'Up to 10 recipes, 25 ingredients, 15 inventory items. Manual entry only.' },
-                  { tier: 'Pro — $9.99/mo or $79.99/yr', desc: 'Unlimited recipes and ingredients, AI scanning (20 scans/month), advanced analytics, export, widgets, Siri Shortcuts. Includes 7-day free trial.' },
-                  { tier: 'Business — $29.99/mo or $299.99/yr', desc: 'Everything in Pro plus multi-location support, team collaboration (up to 5 users), API access, and dedicated support.' },
-                ].map((t) => (
-                  <div key={t.tier} className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                    <p className="font-semibold text-slate-800 mb-1">{t.tier}</p>
-                    <p className="text-sm">{t.desc}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-4 text-sm">
-                All payments are processed by Apple. BiteBytes never collects, stores, or accesses your payment
-                card information. We store only your subscription tier and status. Subscriptions auto-renew unless
-                cancelled at least 24 hours before the renewal date. Manage or cancel at any time via{' '}
-                <strong>Settings → Apple ID → Subscriptions</strong>.
-              </p>
-            </section>
-
             {/* Section 8 */}
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">8. Data Sync & Local Storage</h2>
@@ -283,7 +258,7 @@ export const PrivacyPolicy: React.FC = () => {
               <p>We keep your data as long as your account is active.</p>
               <p className="mt-3">
                 To delete your account and all associated data, email{' '}
-                <a href="mailto:privacy@bitebytes.app" className="text-brand-primary hover:underline">privacy@bitebytes.app</a>{' '}
+                <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a>{' '}
                 with the subject line <strong>"Delete My Account."</strong> We will complete deletion within 30 days and confirm by email.
               </p>
               <div className="mt-4 space-y-3 text-sm">
@@ -313,8 +288,8 @@ export const PrivacyPolicy: React.FC = () => {
                 ))}
               </div>
               <div className="mt-6 space-y-4 text-sm">
-                <p>Contact us at <a href="mailto:privacy@bitebytes.app" className="text-brand-primary hover:underline">privacy@bitebytes.app</a> to exercise these rights. We will respond within 30 days and may need to verify your identity.</p>
-                <p><strong>California Residents (CCPA/CPRA):</strong> You have the right to know what data we collect, request deletion, and opt out of sale (we do not sell data). Submit a verifiable consumer request to <a href="mailto:privacy@bitebytes.app" className="text-brand-primary hover:underline">privacy@bitebytes.app</a>.</p>
+                <p>Contact us at <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a> to exercise these rights. We will respond within 30 days and may need to verify your identity.</p>
+                <p><strong>California Residents (CCPA/CPRA):</strong> You have the right to know what data we collect, request deletion, and opt out of sale (we do not sell data). Submit a verifiable consumer request to <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a>.</p>
                 <p><strong>EEA / UK Residents (GDPR):</strong> Our legal bases are: contract performance (account and core app features), legitimate interests (security and anonymized crash analytics), and consent (camera and AI features). You may lodge a complaint with your local supervisory authority.</p>
               </div>
             </section>
@@ -326,7 +301,7 @@ export const PrivacyPolicy: React.FC = () => {
                 BiteBytes is designed for professional use by adults. We do not knowingly collect personal information
                 from anyone under 13 (or under 16 in the EEA/UK). If you believe a child has submitted personal
                 information through our app, contact us at{' '}
-                <a href="mailto:privacy@bitebytes.app" className="text-brand-primary hover:underline">privacy@bitebytes.app</a>{' '}
+                <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a>{' '}
                 and we will delete it promptly.
               </p>
             </section>
@@ -346,7 +321,7 @@ export const PrivacyPolicy: React.FC = () => {
               </ul>
               <p className="mt-4 text-sm text-slate-500">
                 No security system is infallible. If you suspect your account has been compromised, contact{' '}
-                <a href="mailto:security@bitebytes.app" className="text-brand-primary hover:underline">security@bitebytes.app</a> immediately.
+                <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a> immediately.
               </p>
             </section>
 
@@ -370,29 +345,9 @@ export const PrivacyPolicy: React.FC = () => {
                 </div>
                 <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
                   <p className="font-semibold text-slate-800 mb-1">Privacy Choices URL</p>
-                  <p>Contact <a href="mailto:privacy@bitebytes.app" className="text-brand-primary hover:underline">privacy@bitebytes.app</a> to access, correct, export, or delete your data, or to manage any consent you have provided.</p>
+                  <p>Contact <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a> to access, correct, export, or delete your data, or to manage any consent you have provided.</p>
                 </div>
               </div>
-            </section>
-
-            {/* Section 15 */}
-            <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">15. Contact Us</h2>
-              <div className="grid sm:grid-cols-3 gap-4">
-                {[
-                  { label: 'Privacy & Data Requests', email: 'privacy@bitebytes.app' },
-                  { label: 'Security Issues', email: 'security@bitebytes.app' },
-                  { label: 'General Support', email: 'support@bitebytes.app' },
-                ].map((c) => (
-                  <div key={c.email} className="p-4 bg-slate-50 rounded-xl border border-slate-100 text-center">
-                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">{c.label}</p>
-                    <a href={`mailto:${c.email}`} className="text-brand-primary hover:underline text-sm font-medium">{c.email}</a>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-4 text-sm text-slate-500 text-center">
-                We respond to privacy inquiries within 5 business days and complete data requests within 30 days of identity verification.
-              </p>
             </section>
 
             {/* Footer note */}

@@ -2,13 +2,12 @@ import React from 'react';
 import { SectionHeading } from './UI/SectionHeading';
 import { motion } from 'framer-motion';
 import { 
-  Calculator, 
-  ChefHat, 
-  Package, 
-  ScanFace, 
-  Smartphone, 
-  LucideIcon, 
-  CheckCircle2 
+  Calculator,
+  ChefHat,
+  Package,
+  ScanFace,
+  LucideIcon,
+  CheckCircle2
 } from 'lucide-react';
 
 interface FeatureCardProps {
@@ -91,17 +90,6 @@ export const Features: React.FC = () => {
         "Voice Assistant Mode"
       ]
     },
-    {
-      icon: Smartphone,
-      title: "iOS Native Integrations",
-      description: "Deep system integration unique to the Apple ecosystem.",
-      items: [
-        "Lock Screen Live Activities",
-        "Home Screen Widgets",
-        "Spotlight Search Integration",
-        "Siri Shortcuts"
-      ]
-    }
   ];
 
   return (
