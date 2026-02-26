@@ -258,7 +258,7 @@ export const PrivacyPolicy: React.FC = () => {
               <p>We keep your data as long as your account is active.</p>
               <p className="mt-3">
                 To delete your account and all associated data, email{' '}
-                <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a>{' '}
+                <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a>{' '}
                 with the subject line <strong>"Delete My Account."</strong> We will complete deletion within 30 days and confirm by email.
               </p>
               <div className="mt-4 space-y-3 text-sm">
@@ -288,8 +288,8 @@ export const PrivacyPolicy: React.FC = () => {
                 ))}
               </div>
               <div className="mt-6 space-y-4 text-sm">
-                <p>Contact us at <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a> to exercise these rights. We will respond within 30 days and may need to verify your identity.</p>
-                <p><strong>California Residents (CCPA/CPRA):</strong> You have the right to know what data we collect, request deletion, and opt out of sale (we do not sell data). Submit a verifiable consumer request to <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a>.</p>
+                <p>Contact us at <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a> to exercise these rights. We will respond within 30 days and may need to verify your identity.</p>
+                <p><strong>California Residents (CCPA/CPRA):</strong> You have the right to know what data we collect, request deletion, and opt out of sale (we do not sell data). Submit a verifiable consumer request to <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a>.</p>
                 <p><strong>EEA / UK Residents (GDPR):</strong> Our legal bases are: contract performance (account and core app features), legitimate interests (security and anonymized crash analytics), and consent (camera and AI features). You may lodge a complaint with your local supervisory authority.</p>
               </div>
             </section>
@@ -301,7 +301,7 @@ export const PrivacyPolicy: React.FC = () => {
                 BiteBytes is designed for professional use by adults. We do not knowingly collect personal information
                 from anyone under 13 (or under 16 in the EEA/UK). If you believe a child has submitted personal
                 information through our app, contact us at{' '}
-                <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a>{' '}
+                <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a>{' '}
                 and we will delete it promptly.
               </p>
             </section>
@@ -321,7 +321,7 @@ export const PrivacyPolicy: React.FC = () => {
               </ul>
               <p className="mt-4 text-sm text-slate-500">
                 No security system is infallible. If you suspect your account has been compromised, contact{' '}
-                <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a> immediately.
+                <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a> immediately.
               </p>
             </section>
 
@@ -345,7 +345,7 @@ export const PrivacyPolicy: React.FC = () => {
                 </div>
                 <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
                   <p className="font-semibold text-slate-800 mb-1">Privacy Choices URL</p>
-                  <p>Contact <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a> to access, correct, export, or delete your data, or to manage any consent you have provided.</p>
+                  <p>Contact <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a> to access, correct, export, or delete your data, or to manage any consent you have provided.</p>
                 </div>
               </div>
             </section>

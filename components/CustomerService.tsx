@@ -236,10 +236,10 @@ export const CustomerService: React.FC = () => {
                 <Mail className="text-brand-primary mb-3" size={24} aria-hidden="true" />
                 <div className="font-bold text-slate-900">Email</div>
                 <a
-                  href="mailto:Reachbitebytes@gmail.com"
+                  href="mailto:hello@bitebytes.co"
                   className="text-sm text-slate-500 hover:text-brand-primary transition-colors"
                 >
-                  Reachbitebytes@gmail.com
+                  hello@bitebytes.co
                 </a>
               </div>
               <div className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">

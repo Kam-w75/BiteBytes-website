@@ -45,7 +45,7 @@ export const TermsOfService: React.FC = () => {
               <ul className="mt-3 space-y-2 list-disc pl-6 text-sm">
                 <li>Provide accurate, complete, and current registration information;</li>
                 <li>Maintain the security of your account credentials and not share your password with others;</li>
-                <li>Promptly notify us at <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a> if you suspect unauthorized access to your account; and</li>
+                <li>Promptly notify us at <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a> if you suspect unauthorized access to your account; and</li>
                 <li>Take responsibility for all activity that occurs under your account.</li>
               </ul>
               <p className="mt-3">We reserve the right to suspend or terminate accounts that provide false information or violate these Terms.</p>
@@ -147,7 +147,7 @@ export const TermsOfService: React.FC = () => {
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">8. Maintenance and Support</h2>
               <p>BiteBytes, Inc. — not Apple — is solely responsible for providing maintenance and support services for the Licensed Application. Apple has no obligation whatsoever to furnish any maintenance or support services with respect to the Licensed Application.</p>
-              <p className="mt-3">For support, contact us at: <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a></p>
+              <p className="mt-3">For support, contact us at: <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a></p>
             </section>
 
             <section>
@@ -202,7 +202,7 @@ export const TermsOfService: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <h3 className="text-lg font-bold text-slate-800 mb-2">15.1 By You</h3>
-                  <p>You may close your account at any time by contacting <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a> or through your account settings. For App Store subscriptions, cancel through your Apple Account Settings. Termination does not entitle you to a refund of prepaid fees.</p>
+                  <p>You may close your account at any time by contacting <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a> or through your account settings. For App Store subscriptions, cancel through your Apple Account Settings. Termination does not entitle you to a refund of prepaid fees.</p>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-slate-800 mb-2">15.2 By BiteBytes</h3>
@@ -224,7 +224,7 @@ export const TermsOfService: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-slate-800 mb-2">16.2 Informal Resolution</h3>
-                  <p>Before initiating any legal proceeding, you agree to contact us at <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a> and attempt to resolve the dispute informally for at least 30 days.</p>
+                  <p>Before initiating any legal proceeding, you agree to contact us at <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a> and attempt to resolve the dispute informally for at least 30 days.</p>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-slate-800 mb-2">16.3 Binding Arbitration</h3>
@@ -270,7 +270,7 @@ export const TermsOfService: React.FC = () => {
                   <p>Direct all questions, complaints, or claims regarding the Licensed Application to:</p>
                   <div className="mt-2 bg-slate-50 p-4 rounded-xl border border-slate-100 text-sm">
                     <p className="font-semibold text-slate-800">BiteBytes, Inc.</p>
-                    <p>Email: <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a></p>
+                    <p>Email: <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a></p>
                   </div>
                 </div>
                 <div>
@@ -326,7 +326,7 @@ export const TermsOfService: React.FC = () => {
               <h2 className="text-2xl font-bold text-slate-900 mb-4">19. Contact Us</h2>
               <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                 <p className="font-semibold text-slate-800 mb-3">BiteBytes, Inc.</p>
-                <p className="text-sm">General & Legal Inquiries: <a href="mailto:Reachbitebytes@gmail.com" className="text-brand-primary hover:underline">Reachbitebytes@gmail.com</a></p>
+                <p className="text-sm">General & Legal Inquiries: <a href="mailto:hello@bitebytes.co" className="text-brand-primary hover:underline">hello@bitebytes.co</a></p>
               </div>
             </section>
 
