@@ -107,7 +107,37 @@ export const TermsOfService: React.FC = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">5. Acceptable Use</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">5. Subscription Plans and Payment</h2>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-lg font-bold text-slate-800 mb-2">5.1 Free Plan</h3>
+                  <p>BiteBytes offers a free tier with core features, including up to 5 recipes, 10 ingredients, vendor management, and manual cost entry. Access to features available under your current plan will not be reduced if you continue using the plan you originally subscribed to.</p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-800 mb-2">5.2 Paid Subscriptions — In-App Purchase (iOS)</h3>
+                  <p>BiteBytes Pro is available at the following rates:</p>
+                  <ul className="mt-3 space-y-2 list-disc pl-6 text-sm">
+                    <li><strong>Monthly:</strong> $14.99 per month</li>
+                    <li><strong>Annual:</strong> $139.99 per year (save over 22% compared to monthly billing)</li>
+                  </ul>
+                  <p className="mt-3">Pro includes unlimited AI assistant access, camera invoice scanning, sub-recipe builder, and inventory tracking.</p>
+                  <p className="mt-3">If you subscribe through the Apple App Store, your purchase is processed by Apple using the In-App Purchase API. By subscribing through the App Store, you agree that:</p>
+                  <ul className="mt-3 space-y-2 list-disc pl-6 text-sm">
+                    <li>All billing, payment processing, and subscription management are handled by Apple through your Apple Account;</li>
+                    <li>Subscription fees are charged to your Apple Account upon confirmation of purchase;</li>
+                    <li>Subscriptions automatically renew unless auto-renewal is turned off at least 24 hours before the end of the current billing period;</li>
+                    <li>Your Apple Account will be charged for renewal within 24 hours prior to the end of the current billing period;</li>
+                    <li>You can manage and cancel subscriptions through your Apple Account Settings after purchase;</li>
+                    <li>No cancellation of the current active subscription period is allowed; and</li>
+                    <li>Any unused portion of a free trial, if offered, will be forfeited when you purchase a subscription.</li>
+                  </ul>
+                  <p className="mt-3 text-sm bg-slate-50 p-3 rounded-xl border border-slate-100">To cancel an App Store subscription: Open the <strong>Settings app</strong> → <strong>[Your Name]</strong> → <strong>Subscriptions</strong> → <strong>BiteBytes</strong> → <strong>Cancel Subscription</strong>.</p>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">6. Acceptable Use</h2>
               <p>You agree to use BiteBytes only for lawful purposes. You agree not to:</p>
               <ul className="mt-3 space-y-2 list-disc pl-6 text-sm">
                 <li>Use the Service for any unlawful, fraudulent, or harmful purpose;</li>

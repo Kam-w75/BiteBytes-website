@@ -239,6 +239,29 @@ export const PrivacyPolicy: React.FC = () => {
               </p>
             </section>
 
+            {/* Section 7 */}
+            <section>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">7. Subscriptions & Payments</h2>
+              <p className="mb-6">BiteBytes offers two tiers:</p>
+              <div className="space-y-4">
+                {[
+                  { tier: 'Free', desc: 'Up to 10 recipes, 25 ingredients, 15 inventory items. Manual entry only.' },
+                  { tier: 'Pro ($14.99/month or $139.99/year)', desc: 'Unlimited recipes and ingredients, AI scanning (20 scans/month), advanced analytics, export, widgets, Siri Shortcuts. Includes 7-day free trial.' },
+                ].map((t) => (
+                  <div key={t.tier} className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                    <p className="font-semibold text-slate-800 mb-1">{t.tier}</p>
+                    <p className="text-sm">{t.desc}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-4 text-sm">
+                All payments are processed by Apple. BiteBytes never collects, stores, or accesses your payment
+                card information. We store only your subscription tier and status. Subscriptions auto-renew unless
+                cancelled at least 24 hours before the renewal date. Manage or cancel at any time via{' '}
+                <strong>Settings → Apple ID → Subscriptions</strong> on your device.
+              </p>
+            </section>
+
             {/* Section 8 */}
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">8. Data Sync & Local Storage</h2>
