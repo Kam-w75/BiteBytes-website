@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Linkedin } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 import { Logo } from './UI/Logo';
 import { AppStoreBadge } from './UI/AppStoreBadge';
 import { Page } from '../App';
@@ -41,7 +41,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="flex gap-4">
               <a href="https://x.com/Bite_Bytes" target="_blank" rel="noopener noreferrer" aria-label="BiteBytes on X" className="text-slate-400 hover:text-brand-primary transition-colors"><XIcon size={20} /></a>
               <a href="https://www.instagram.com/bite_bytes1?igsh=MWt4b2R1emE1dXVlZw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="BiteBytes on Instagram" className="text-slate-400 hover:text-brand-primary transition-colors"><Instagram size={20} /></a>
-              <a href="#" aria-label="BiteBytes on LinkedIn" className="text-slate-400 hover:text-brand-primary transition-colors"><Linkedin size={20} /></a>
             </div>
           </div>
 

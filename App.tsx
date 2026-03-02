@@ -12,6 +12,24 @@ const CustomerService = lazy(() => import('./components/CustomerService').then(m
 
 export type Page = 'home' | 'privacy' | 'terms' | 'support';
 
+const pathToPage: Record<string, Page> = {
+  '/':        'home',
+  '/privacy': 'privacy',
+  '/terms':   'terms',
+  '/contact': 'support',
+};
+
+const pageToPath: Record<Page, string> = {
+  home:    '/',
+  privacy: '/privacy',
+  terms:   '/terms',
+  support: '/contact',
+};
+
+function getPageFromPath(): Page {
+  return pathToPage[window.location.pathname] ?? 'home';
+}
+
 // ─── Error Boundary ────────────────────────────────────────────────────────────
 interface ErrorBoundaryState { hasError: boolean; }
 
@@ -70,12 +88,23 @@ const pageTitles: Record<Page, string> = {
 
 // ─── App ───────────────────────────────────────────────────────────────────────
 function App() {
-  const [currentPage, setCurrentPage] = useState<Page>('home');
+  const [currentPage, setCurrentPage] = useState<Page>(getPageFromPath);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = pageTitles[currentPage];
+    const path = pageToPath[currentPage];
+    if (window.location.pathname !== path) {
+      window.history.pushState({}, '', path);
+    }
   }, [currentPage]);
+
+  // Handle browser back/forward buttons
+  useEffect(() => {
+    const onPop = () => setCurrentPage(getPageFromPath());
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
 
   const renderContent = () => {
     switch (currentPage) {
